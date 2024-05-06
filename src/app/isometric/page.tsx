@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./page.css";
+import "./iso.css";
 
 export default function IsoMatric() {
   return (
