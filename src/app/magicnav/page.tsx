@@ -58,6 +58,7 @@ export default function IsoMatric() {
     </div>
   );
 }
-
+/*
 https://moon-ga.github.io/next.js/3-how-to-style-copy/
 https://careerly.co.kr/qnas/1068
+*/
