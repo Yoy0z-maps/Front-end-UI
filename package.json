@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "create-react-class": "^15.7.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^5.2.1",
     "yarn": "^1.22.22"
   },
   "devDependencies": {
