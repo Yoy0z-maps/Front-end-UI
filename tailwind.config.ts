@@ -17,9 +17,14 @@ const config: Config = {
         isobg: "#33a3ee",
         isohoverbefore: "#1f5378",
         isohoverafter: "#2982b9",
+        clr: "#222327",
+        indicator: "#29fd53",
       },
       boxShadow: {
         "iso-last-child": "1 -120px 120px 20px rgba(0, 0, 0, 0.25)",
+      },
+      fontFamily: {
+        pop: ["Poppins"],
       },
     },
   },
