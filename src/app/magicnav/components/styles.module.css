@@ -20,3 +20,25 @@
   border-top-left-radius: 20px;
   box-shadow: -1px -10px 0 0 #222327;
 }
+.indicator_two::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -28px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 15px 18px #fff;
+}
+.indicator_two::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -28px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -15px 18px #fff;
+}

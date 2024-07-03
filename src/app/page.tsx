@@ -9,6 +9,9 @@ export default function Home() {
       <li>
         <Link href="/magicnav">Magic Navigation Menu Indicator</Link>
       </li>
+      <li>
+        <Link href="/cube">3D Cube Animation</Link>
+      </li>
     </div>
   );
 }
