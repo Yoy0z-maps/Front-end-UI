@@ -2,28 +2,28 @@
   position: relative;
   transform: skewY(-20deg);
 }
-.cube {
+.container .cube {
   position: relative;
   translate: calc(var(--z) * 60px) calc(var(--z) * 60px);
 }
-.cubeDiv {
+.container .cube .cubeDiv {
   position: absolute;
   translate: calc(-70px * var(--x)) calc(-70px * var(--y));
 }
-.cubeSpan {
+.container .cube .cubeDiv .cubeSpan {
   position: relative;
   display: inline-block;
   width: 50px;
   height: 50px;
   background: #dcdcdc;
-  transition: 1.5s;
+  transform: 1.5s;
 }
-.active {
+.container .cube .cubeDiv .cubeSpan.active {
   background: #ef4149;
   transform: translate(0, -50px);
   animation: animate 2s ease-in-out infinite;
 }
-.cubeSpanBefore {
+.container .cube .cubeDiv .cubeSpan::before {
   content: "";
   position: absolute;
   left: -40px;
@@ -32,11 +32,12 @@
   background: #c8c8c8;
   transform-origin: right;
   transform: skewY(45deg);
+  transition: 1.5s;
 }
-.activeBefore {
+.container .cube .cubeDiv .cubeSpan.active::before {
   background: #f75d64;
 }
-.cubeSpanAfter {
+.container .cube .cubeDiv .cubeSpan::after {
   content: "";
   position: absolute;
   top: -40px;
@@ -49,7 +50,7 @@
   transition: 1.5s;
   box-shadow: -100px 100px 5px rgba(0, 0, 0, 0.15);
 }
-.activeAfter {
+.container .cube .cubeDiv .cubeSpan.active::after {
   background: #f14e55;
   box-shadow: -150px 150px 5px rgba(0, 0, 0, 0.15);
 }

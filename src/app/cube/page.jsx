@@ -50,5 +50,9 @@ export default function Page() {
     cubes();
   }, []);
 
-  return <div className={styles.container}></div>;
+  return (
+    <div className="flex justify-center items-center min-h-[100vh] bg-clr overflow-hidden">
+      <div className={styles.container}></div>
+    </div>
+  );
 }
