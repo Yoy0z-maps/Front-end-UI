@@ -20,6 +20,7 @@
 }
 .container .cube .cubeDiv .cubeSpan.active {
   background: #ef4149;
+  transition: 1.5s;
   transform: translate(0, -50px);
   animation: animate 2s ease-in-out infinite;
 }
