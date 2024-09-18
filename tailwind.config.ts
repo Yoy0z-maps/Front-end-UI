@@ -37,7 +37,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function ({ addUtilities }) {
+    function ({ addUtilities }: any) {
       const newUtilities = {
         ".transform-preserve-3d": {
           "transform-style": "preserve-3d",
@@ -46,7 +46,7 @@ const config: Config = {
 
       addUtilities(newUtilities, ["responsive", "hover"]);
     },
-    function ({ addUtilities }) {
+    function ({ addUtilities }: any) {
       const newUtilities = {
         ".perspective-none": {
           perspective: "none",
@@ -64,7 +64,7 @@ const config: Config = {
 
       addUtilities(newUtilities, ["responsive", "hover"]);
     },
-    function ({ addUtilities }) {
+    function ({ addUtilities }: any) {
       const newUtilities = {
         ".custom-top": {
           top: "calc(50% - 150px)",
@@ -76,7 +76,7 @@ const config: Config = {
 
       addUtilities(newUtilities, ["responsive", "hover"]);
     },
-    function ({ addUtilities }) {
+    function ({ addUtilities }: any) {
       const newUtilities = {
         ".reflect-below": {
           "-webkit-box-reflect":

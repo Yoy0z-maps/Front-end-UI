@@ -1,4 +1,9 @@
-export default function SliderButton({ onPrev, onNext }) {
+interface Props {
+  onPrev: () => void;
+  onNext: () => void;
+}
+
+export default function SliderButton({ onPrev, onNext }: Props) {
   return (
     <div className="absolute flex bottom-[75px] gap-[20px]">
       <span
