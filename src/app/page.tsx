@@ -12,6 +12,9 @@ export default function Home() {
       <li>
         <Link href="/cube">3D Cube Animation</Link>
       </li>
+      <li>
+        <Link href="/threedslider">3D Image Slider</Link>
+      </li>
     </div>
   );
 }

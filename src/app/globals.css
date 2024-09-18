@@ -24,4 +24,32 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .relative div:nth-child(1) {
+    transform: translate3d(-200px, 0, 0) scale(0.7) rotateY(25deg);
+    z-index: 1;
+  }
+  .relative div:nth-child(2) {
+    transform: translate3d(-150px, 0, 0) scale(0.8) rotateY(25deg);
+    z-index: 2;
+  }
+  .relative div:nth-child(3) {
+    transform: translate3d(-100px, 0, 0) scale(0.9) rotateY(15deg);
+    z-index: 3;
+  }
+  .relative div:nth-child(4) {
+    transform: translate3d(0px, 0, 0) scale(1) rotateY(0deg);
+    z-index: 4;
+  }
+  .relative div:nth-child(5) {
+    transform: translate3d(100px, 0, 0) scale(0.9) rotateY(-15deg);
+    z-index: 3;
+  }
+  .relative div:nth-child(6) {
+    transform: translate3d(150px, 0, 0) scale(0.8) rotateY(-25deg);
+    z-index: 2;
+  }
+  .relative div:nth-child(7) {
+    transform: translate3d(200px, 0, 0) scale(0.7) rotateY(-25deg);
+    z-index: -1;
+  }
 }

@@ -159,7 +159,7 @@ export default function Magic_Two() {
           </Link>
         </li>
         <div
-          className={`absolute top-[-35px] w-[70px] h-[70px] bg-white rounded-[50%]  duration-500 ${styles.indicator_two}`}
+          className={`absolute top-[-35px] w-[70px] h-[70px] bg-white rounded-md duration-500 ${styles.indicator_two}`}
           style={{ transform: `translateX(${70 * nav_index}px)` }}
         ></div>
       </ul>
