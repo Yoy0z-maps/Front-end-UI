@@ -52,4 +52,7 @@ body {
     transform: translate3d(200px, 0, 0) scale(0.7) rotateY(-25deg);
     z-index: -1;
   }
+  div section:nth-child(even) {
+    background: #694bd1;
+  }
 }

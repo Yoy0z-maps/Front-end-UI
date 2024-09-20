@@ -15,6 +15,9 @@ export default function Home() {
       <li>
         <Link href="/threedslider">3D Image Slider</Link>
       </li>
+      <li>
+        <Link href="/parallax">Parallax Scrolling Page</Link>
+      </li>
     </div>
   );
 }

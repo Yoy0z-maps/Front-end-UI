@@ -25,7 +25,9 @@ const config: Config = {
         isohoverafter: "#2982b9",
         clr: "#222327",
         indicator: "#29fd53",
-        background: "#222",
+        tbackground: "#222",
+        pbackground: "#333",
+        pchildbackground: "#694bd1",
       },
       boxShadow: {
         "iso-last-child": "1 -120px 120px 20px rgba(0, 0, 0, 0.25)",
