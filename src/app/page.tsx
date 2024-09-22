@@ -18,6 +18,9 @@ export default function Home() {
       <li>
         <Link href="/parallax">Parallax Scrolling Page</Link>
       </li>
+      <li>
+        <Link href="/wave">Wave Animation</Link>
+      </li>
     </div>
   );
 }

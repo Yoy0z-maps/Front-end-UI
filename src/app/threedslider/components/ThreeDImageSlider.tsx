@@ -41,6 +41,7 @@ export default function ThreeDImageSlider() {
       >
         {images.map((image, index) => (
           <div
+            id="card"
             key={index}
             className="absolute w-[200px] h-[300px] bg-white custom-top custom-left transition duration-700 shadow-threedslider transform-preserve-3d transform origin-bottom select-none reflect-below"
           >
