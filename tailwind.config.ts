@@ -12,6 +12,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "skin-shadow": "linear-gradient(rgba(0,0,0,0.1),transparent)",
       },
       perspective: {
         "500": "500px",
@@ -28,11 +29,16 @@ const config: Config = {
         tbackground: "#222",
         pbackground: "#333",
         pchildbackground: "#694bd1",
-        fbackground: "#3586ff",
+        fbackground: "#'3586ff",
+        eyebackground: "#edf8ff",
+        eyered: "#fb6971",
+        eyeblue: "#6192a1",
+        skin: "#fdece2",
       },
       boxShadow: {
         "iso-last-child": "1 -120px 120px 20px rgba(0, 0, 0, 0.25)",
         threedslider: "0 0 50px rgba(0, 0, 0, 0.5)",
+        "eye-shadow": "25px 25px 0 rgba(0,0,0,0.05)",
       },
       fontFamily: {
         pop: ["Poppins"],

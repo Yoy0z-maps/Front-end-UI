@@ -21,6 +21,9 @@ export default function Home() {
       <li>
         <Link href="/wave">Wave Animation</Link>
       </li>
+      <li>
+        <Link href="/eye">Eyes Follow Mouse Cursor</Link>
+      </li>
     </div>
   );
 }
