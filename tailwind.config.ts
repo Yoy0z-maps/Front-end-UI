@@ -29,7 +29,7 @@ const config: Config = {
         tbackground: "#222",
         pbackground: "#333",
         pchildbackground: "#694bd1",
-        fbackground: "#'3586ff",
+        fbackground: "#3586ff",
         eyebackground: "#edf8ff",
         eyered: "#fb6971",
         eyeblue: "#6192a1",
