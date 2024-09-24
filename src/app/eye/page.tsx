@@ -12,10 +12,10 @@ export default function Page() {
       id="body"
       className="flex justify-center items-center min-h-[100vh] bg-eyebackground"
     >
-      <div className="relative w-[400px] h-[500px] bg-white m-[40px] shadow-eyes-shadow">
+      <div className="relative w-[400px] h-[500px] bg-white m-[40px] shadow-eyes-shadow overflow-hidden">
         <div
           id="hair"
-          className="absolute bottom-0 left-[50%] translate-x-[-50%] w-[230px] h-[450px] bg-black rounded-tl-[200px] rounded-tr-[200px]"
+          className="absolute z-[20] bottom-[350px] left-[50%] translate-x-[-50%] w-[150px] h-[50px] bg-black rounded-tl-[100px] rounded-tr-[100px]"
         ></div>
         <div
           id="bottom"
@@ -30,7 +30,7 @@ export default function Page() {
           ></div>
           <div
             id="face"
-            className="absolute top-[120px] left-[50%] translate-x-[-50%] w-[160px] h-[180px] bg-skin z-[12] rounded-[50%] rounded-tl-[40%] rounded-tr-[40%] group cursor-pointer"
+            className="absolute top-[120px] left-[50%] translate-x-[-50%] w-[160px] h-[180px] bg-skin z-[12] rounded-[50%] rounded-tl-[30%] rounded-tr-[30%] group cursor-pointer"
           >
             <div
               id="eyes"
