@@ -187,7 +187,7 @@ export default function Magic_One() {
           </Link>
         </li>
         <div
-          className={`absolute top-[-50%] w-[70px] h-[70px] bg-indicator border-[6px] rounded-[50%] border-clr duration-500 ${styles.indicator}`}
+          className={`absolute top-[-50%] w-[70px] h-[70px] bg-indicator border-[6px] rounded-[50%] border-clr duration-500 before:content-[''] before:absolute before:top-[45%] before:left-[-22px] before:w-[20px] before:h-[20px] before:bg-transparent before:rounded-tr-[20px] shadow-indicator-before after:content-[''] after:absolute after:top-[45%] after:right-[-22px] after:h-[20px] after:w-[20px] after:bg-transparent after:rounded-tl-[20px] shadow-indicator-after`}
           style={{ transform: `translateX(${70 * nav_index}px)` }}
         ></div>
       </ul>

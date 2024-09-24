@@ -39,6 +39,10 @@ const config: Config = {
         "iso-last-child": "1 -120px 120px 20px rgba(0, 0, 0, 0.25)",
         threedslider: "0 0 50px rgba(0, 0, 0, 0.5)",
         "eye-shadow": "25px 25px 0 rgba(0,0,0,0.05)",
+        "indicator-before": "1px -10px 0 0 #222327",
+        "indicator-after": "-1px -10px 0 0 #222327",
+        "indicator2-before": "15px 18px #fff",
+        "indicator2-after": "-15px 18px #fff",
       },
       fontFamily: {
         pop: ["Poppins"],
