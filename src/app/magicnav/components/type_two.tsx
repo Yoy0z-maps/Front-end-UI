@@ -158,7 +158,7 @@ export default function Magic_Two() {
           </Link>
         </li>
         <div
-          className={`absolute top-[-35px] w-[70px] h-[70px] bg-white rounded-md duration-500 before:content-[''] before:absolute before:top-[5px] before:left-[-28px] before:w-[30px] before:h-[30px] before:bg-transparent before:rounded-[50%] after:shadow-indicator2-before after:content-[''] after:absolute after:top-[5px] after:right-[-28px] after:w-[30px] after:h-[30px] after:bg-transparent after:rounded-[50%] after:shadow-indicator2-after`}
+          className={`absolute top-[-35px] w-[70px] h-[70px] bg-white rounded-md duration-500 before:content-[''] before:absolute before:top-[5px] before:left-[-28px] before:w-[30px] before:h-[30px] before:bg-transparent before:rounded-[50%] before:shadow-indicator2-before after:content-[''] after:absolute after:top-[5px] after:right-[-28px] after:w-[30px] after:h-[30px] after:bg-transparent after:rounded-[50%] after:shadow-indicator2-after`}
           style={{ transform: `translateX(${70 * nav_index}px)` }}
         ></div>
       </ul>
