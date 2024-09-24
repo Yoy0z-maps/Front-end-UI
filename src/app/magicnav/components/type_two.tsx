@@ -1,11 +1,10 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaCamera } from "react-icons/fa";
 import { GoHomeFill } from "react-icons/go";
 import { IoMdSettings } from "react-icons/io";
 import { IoChatbubbleEllipsesSharp, IoPerson } from "react-icons/io5";
-import styles from "./styles.module.css";
 
 export default function Magic_Two() {
   const [nav_index, setIndex] = useState(0);
@@ -159,7 +158,7 @@ export default function Magic_Two() {
           </Link>
         </li>
         <div
-          className={`absolute top-[-35px] w-[70px] h-[70px] bg-white rounded-md duration-500 ${styles.indicator_two}`}
+          className={`absolute top-[-35px] w-[70px] h-[70px] bg-white rounded-md duration-500 before:content-[''] before:absolute before:top-[5px] before:left-[-28px] before:w-[30px] before:h-[30px] before:bg-transparent before:rounded-[50%] after:shadow-indicator2-before after:content-[''] after:absolute after:top-[5px] after:right-[-28px] after:w-[30px] after:h-[30px] after:bg-transparent after:rounded-[50%] after:shadow-indicator2-after`}
           style={{ transform: `translateX(${70 * nav_index}px)` }}
         ></div>
       </ul>
