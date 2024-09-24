@@ -11,6 +11,5 @@ export default function EyeFollower() {
       eye.style.transform = "rotate(" + rot + "deg)";
     });
   }
-  console.log(1);
   return;
 }
