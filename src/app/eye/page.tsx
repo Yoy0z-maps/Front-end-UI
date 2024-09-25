@@ -1,10 +1,33 @@
 "use client";
 import { useEffect } from "react";
-import EyeFollower from "./function";
 
 export default function Page() {
   useEffect(() => {
-    EyeFollower();
+    function eyeball(event: MouseEvent) {
+      let eye = document.querySelectorAll("#eye i") as NodeListOf<HTMLElement>;
+      eye.forEach(function (eye) {
+        let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+        let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+        let radian = Math.atan2(event.pageX - x, event.pageY - y);
+        let rot = radian * (180 / Math.PI) * -1 + 270;
+        eye.style.transform = "rotate(" + rot + "deg)";
+      });
+    }
+
+    // addEventListner가 mousemove 이벤트에 대해 일반적인 EVENT타입을 예상하지만, 코드에서는 mouseEvent타입을 강제하기 위해 타입정리
+    const handleMouseMove = (event: Event) => {
+      eyeball(event as MouseEvent);
+    };
+
+    document
+      .querySelector("#body")
+      ?.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      document
+        .querySelector("#body")
+        ?.removeEventListener("mousemove", handleMouseMove);
+    };
   }, []);
 
   return (
