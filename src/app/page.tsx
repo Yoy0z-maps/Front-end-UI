@@ -24,6 +24,9 @@ export default function Home() {
       <li>
         <Link href="/eye">Eyes Follow Mouse Cursor</Link>
       </li>
+      <li>
+        <Link href="/status">Circle Progress Bar</Link>
+      </li>
     </div>
   );
 }

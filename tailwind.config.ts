@@ -36,6 +36,8 @@ const config: Config = {
         skin: "#fdece2",
         eyeblack: "#111",
         mouth: "#ff4e57",
+        statusbackground: "#363636",
+        statusborder: "#4d4c51",
       },
       boxShadow: {
         "iso-last-child": "1 -120px 120px 20px rgba(0, 0, 0, 0.25)",
@@ -48,6 +50,8 @@ const config: Config = {
         "eye-shadow": "0 0 0 5px #3d5d89",
         eyebrush: "0 -3px 0 #111",
         "mouth-shadow": "inset 0 10px 0 rgba(0,0,0,0.2)",
+        "circle-shadow":
+          "inset 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.75), 0 -2px 2px rgba(255,255,255,0.5), inset 0 4px 2px rgba(0,0,0,0.25), inset 0 -2px 2px rgba(255,255,255,0.5)",
       },
       fontFamily: {
         pop: ["Poppins"],
