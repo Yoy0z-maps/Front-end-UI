@@ -2,10 +2,9 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import SliderButton from "./SliderButton";
-import ChangeImage from "./function";
 
 export default function ThreeDImageSlider() {
-  const [images, setImages] = useState([
+  const images = [
     "/images/img1.jpeg",
     "/images/img2.jpeg",
     "/images/img3.jpeg",
@@ -13,10 +12,28 @@ export default function ThreeDImageSlider() {
     "/images/img5.jpeg",
     "/images/img6.jpeg",
     "/images/img7.jpeg",
-  ]);
+  ];
 
   useEffect(() => {
-    ChangeImage();
+    let prev = document.querySelector("#prev") as HTMLElement;
+    let next = document.querySelector("#next") as HTMLElement;
+
+    next.addEventListener("click", function () {
+      let items = document.querySelectorAll("#container div");
+      const container = document.querySelector("#container");
+      // TypeScript => Check 'null'
+      if (container && items.length > 0) {
+        container.appendChild(items[0]);
+      }
+    });
+
+    prev.addEventListener("click", function () {
+      let items = document.querySelectorAll("#container div");
+      const container = document.querySelector("#container");
+      if (container && items.length > 0) {
+        container.prepend(items[items.length - 1]);
+      }
+    });
   }, []);
 
   return (
