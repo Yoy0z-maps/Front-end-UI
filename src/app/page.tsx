@@ -24,6 +24,9 @@ export default function Home() {
       <li>
         <Link href="/eye">Eyes Follow Mouse Cursor</Link>
       </li>
+      <li>
+        <Link href="/box">Box Hover Effects</Link>
+      </li>
     </div>
   );
 }
