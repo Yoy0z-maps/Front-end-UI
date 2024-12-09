@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        pepsi: ["Pepsi", "sans-serif"],
+        pop: ["Poppins"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -43,6 +47,8 @@ const config: Config = {
         thirdbox: "#00aa98",
         boxblackoverlay: "rgba(0,0,0,0.2)",
         boxblackoverlayhover: "rgba(0,0,0,0.8)",
+        rotationbg: "#1F1F1F",
+        pepsi: "#F6FB02",
       },
       boxShadow: {
         "iso-last-child": "1 -120px 120px 20px rgba(0, 0, 0, 0.25)",
@@ -61,9 +67,7 @@ const config: Config = {
         "second-box-hover": "0 0 0 400px #f45c51",
         "third-box": "0 0 0 0 #00aa98",
         "third-box-hover": "0 0 0 400px #00aa98",
-      },
-      fontFamily: {
-        pop: ["Poppins"],
+        "text-shadow": "-2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff",
       },
     },
   },
