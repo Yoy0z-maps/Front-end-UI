@@ -27,6 +27,9 @@ export default function Home() {
       <li>
         <Link href="/box">Box Hover Effects</Link>
       </li>
+      <li>
+        <Link href="/rotation">Rotation</Link>
+      </li>
     </div>
   );
 }
