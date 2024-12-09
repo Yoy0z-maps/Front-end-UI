@@ -99,4 +99,40 @@ body {
       background-position: 1000px;
     }
   }
+  #product1 {
+    rotate: 30deg;
+    --left: -30px;
+  }
+  #pepsi1 {
+    background:
+      url("/images/pepsi1.png") var(--left) 0,
+      url("/images/soda_mockup.png");
+    background-size: auto 100%;
+    aspect-ratio: 3/8;
+    background-blend-mode: multiply;
+    mask-image: url("/images/soda_mockup.png");
+    mask-size: auto 100%;
+    transition: all 0.7s ease-in-out;
+  }
+  #pepsi1:hover {
+    --left: -800px;
+  }
+  #product2 {
+    rotate: -30deg;
+    --left: -30px;
+  }
+  #pepsi2 {
+    background:
+      url("/images/pepsi2.png") var(--left) 0,
+      url("/images/soda_mockup.png");
+    background-size: auto 100%;
+    aspect-ratio: 3/8;
+    background-blend-mode: multiply;
+    mask-image: url("/images/soda_mockup.png");
+    mask-size: auto 100%;
+    transition: all 0.7s ease-in-out;
+  }
+  #pepsi2:hover {
+    --left: -800px;
+  }
 }
