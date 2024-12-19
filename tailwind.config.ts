@@ -49,6 +49,7 @@ const config: Config = {
         boxblackoverlayhover: "rgba(0,0,0,0.8)",
         rotationbg: "#1F1F1F",
         pepsi: "#F6FB02",
+        canvasbg: "#ffcaec",
       },
       boxShadow: {
         "iso-last-child": "1 -120px 120px 20px rgba(0, 0, 0, 0.25)",

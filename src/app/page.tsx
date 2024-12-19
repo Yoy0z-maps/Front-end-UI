@@ -30,6 +30,9 @@ export default function Home() {
       <li>
         <Link href="/rotation">Rotation</Link>
       </li>
+      <li>
+        <Link href="/canvas">Canvas</Link>
+      </li>
     </div>
   );
 }
