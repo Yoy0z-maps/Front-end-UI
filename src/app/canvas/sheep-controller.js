@@ -2,11 +2,14 @@ import { Sheep } from "./sheep";
 
 export class SheepController {
   constructor() {
-    this.img = new Image();
-    this.img.onload = () => {
-      this.loaded();
-    };
-    this.img.src = "/images/sheep.png";
+    // 브라우저 전용 API(Image, window, docunent 등)를 Next.js서버에서 렌더링 방지
+    if (typeof window !== "undefined") {
+      this.img = new Image();
+      this.img.onload = () => {
+        this.loaded();
+      };
+      this.img.src = "/images/sheep.png";
+    }
 
     this.items = [];
 
