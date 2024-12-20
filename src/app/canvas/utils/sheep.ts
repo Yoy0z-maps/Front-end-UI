@@ -1,27 +1,31 @@
+import { SheepPoint } from "../types/point";
+
 export class Sheep {
-  constructor(img, stageWidth) {
+  private totalFrame = 8;
+  private curFrame = 0;
+  private imgWidth = 360;
+  private imgHeight = 300;
+  public sheepWidth = 180;
+  private sheepHeight = 150;
+  private sheepWidthHalf = this.sheepWidth / 2;
+  private fps = 24;
+  private fpsTime = 1000 / this.fps;
+
+  private img: HTMLImageElement;
+  public x: number;
+  private y: number;
+  private speed: number;
+  private time: number | null = null;
+
+  constructor(img: HTMLImageElement, stageWidth: number) {
     this.img = img;
-
-    this.totalFrame = 8;
-    this.curFrame = 0;
-
-    this.imgWidth = 360;
-    this.imgHeight = 300;
-
-    this.sheepWidth = 180;
-    this.sheepHeight = 150;
-
-    this.sheepWidthHalf = this.sheepWidth / 2;
     this.x = stageWidth + this.sheepWidth;
     this.y = 0;
     this.speed = Math.random() * 2 + 1;
-
-    this.fps = 24;
-    this.fpsTime = 1000 / this.fps;
   }
 
-  draw(ctx, t, dots) {
-    if (!this.time) {
+  draw(ctx: CanvasRenderingContext2D, t: number, dots: SheepPoint[]) {
+    if (this.time === null) {
       this.time = t;
     }
 
@@ -36,7 +40,7 @@ export class Sheep {
     this.animate(ctx, dots);
   }
 
-  animate(ctx, dots) {
+  animate(ctx: CanvasRenderingContext2D, dots: SheepPoint[]) {
     this.x -= this.speed;
     const closest = this.getY(this.x, dots);
     this.y = closest.y;
@@ -58,7 +62,7 @@ export class Sheep {
     ctx.restore();
   }
 
-  getY(x, dots) {
+  getY(x: number, dots: SheepPoint[]) {
     for (let i = 1; i < dots.length; i++) {
       if (x >= dots[i].x1 && x <= dots[i].x3) {
         return this.getY2(x, dots[i]);
@@ -67,7 +71,7 @@ export class Sheep {
     return { y: 0, rotation: 0 };
   }
 
-  getY2(x, dot) {
+  getY2(x: number, dot: SheepPoint) {
     const total = 200;
     let pt = this.getPointOnQuad(
       dot.x1,
@@ -98,11 +102,19 @@ export class Sheep {
     return pt;
   }
 
-  getQuadValue(p0, p1, p2, t) {
+  getQuadValue(p0: number, p1: number, p2: number, t: number) {
     return (1 - t) * (1 - t) * p0 + 2 * (1 - t) * t * p1 + t * t * p2;
   }
 
-  getPointOnQuad(x1, y1, x2, y2, x3, y3, t) {
+  getPointOnQuad(
+    x1: number,
+    y1: number,
+    x2: number,
+    y2: number,
+    x3: number,
+    y3: number,
+    t: number
+  ) {
     const tx = this.quadTangent(x1, x2, x3, t);
     const ty = this.quadTangent(y1, y2, y3, t);
     const rotation = -Math.atan2(tx, ty) + (90 * Math.PI) / 180;
@@ -114,7 +126,7 @@ export class Sheep {
     };
   }
 
-  quadTangent(a, b, c, t) {
+  quadTangent(a: number, b: number, c: number, t: number) {
     return 2 * (1 - t) * (b - a) + 2 * (c - b) * t;
   }
 }

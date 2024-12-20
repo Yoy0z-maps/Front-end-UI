@@ -26,10 +26,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/cube/page.jsx",
-    "src/app/canvas/sheep-controller.js",
-    "src/app/canvas/sheep.js",
-    "src/app/canvas/sun.js"
+    "src/app/cube/page.jsx"
   ],
   "exclude": ["node_modules"]
 }

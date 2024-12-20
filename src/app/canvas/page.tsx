@@ -1,8 +1,10 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { Hill } from "./hill";
-import { SheepController } from "./sheep-controller";
-import { Sun } from "./sun";
+import { Hill } from "./utils/hill";
+
+import { Sun } from "./utils/sun";
+import { SheepController } from "./utils/sheep-controller";
+import { SheepPoint } from "./types/point";
 // https://www.youtube.com/watch?v=hCHL7sydzn0 (참고 링크)
 
 export default function Page() {
@@ -50,7 +52,7 @@ export default function Page() {
           dots = hill.draw(ctx);
         });
 
-        sheepController.current.draw(ctx, t, dots);
+        sheepController.current.draw(ctx, t, dots as unknown as SheepPoint[]);
         requestAnimationFrame(animate);
       }
     };

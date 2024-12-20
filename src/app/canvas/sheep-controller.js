@@ -1,4 +1,4 @@
-import { Sheep } from "./sheep";
+import { Sheep } from "./utils/sheep";
 
 export class SheepController {
   constructor() {
