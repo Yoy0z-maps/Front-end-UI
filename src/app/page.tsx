@@ -33,6 +33,9 @@ export default function Home() {
       <li>
         <Link href="/canvas">Canvas</Link>
       </li>
+      <li>
+        <Link href="/card">Card</Link>
+      </li>
     </div>
   );
 }
