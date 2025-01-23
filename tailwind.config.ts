@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      mixBlendMode: {
+        "color-dodge": "color-dodge",
+      },
+      backgroundSize: {
+        "150": "150% 150%",
+      },
+      backgroundPosition: {
+        "pos-100": "100%",
+      },
       fontFamily: {
         pepsi: ["Pepsi", "sans-serif"],
         pop: ["Poppins"],
@@ -17,6 +26,8 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "skin-shadow": "linear-gradient(rgba(0,0,0,0.1),transparent)",
+        "custom-gradient":
+          "linear-gradient(105deg, transparent 40%, rgba(255,219,112,0.8) 45%, rgba(132, 50, 255, 0.6) 50%, transparent 54%)",
       },
       perspective: {
         "500": "500px",
