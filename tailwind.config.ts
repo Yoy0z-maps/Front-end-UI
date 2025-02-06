@@ -28,6 +28,9 @@ const config: Config = {
         "skin-shadow": "linear-gradient(rgba(0,0,0,0.1),transparent)",
         "custom-gradient":
           "linear-gradient(105deg, transparent 40%, rgba(255,219,112,0.8) 45%, rgba(132, 50, 255, 0.6) 50%, transparent 54%)",
+        "dark-gradient": "linear-gradient(180deg, #282828, #202020)",
+        "key-before": "linear-gradient(90deg, #232323, #4a4a4a)",
+        "active-key": "linear-gradient(90deg, #de0000, #ffffff5c)",
       },
       perspective: {
         "500": "500px",
@@ -61,6 +64,10 @@ const config: Config = {
         rotationbg: "#1F1F1F",
         pepsi: "#F6FB02",
         canvasbg: "#ffcaec",
+        "key-lb": "#0004",
+        "key-t": "#0009",
+        "active-key": "#f00",
+        "active-key-before-border": "#fff4",
       },
       boxShadow: {
         "iso-last-child": "1 -120px 120px 20px rgba(0, 0, 0, 0.25)",
@@ -80,6 +87,10 @@ const config: Config = {
         "third-box": "0 0 0 0 #00aa98",
         "third-box-hover": "0 0 0 400px #00aa98",
         "text-shadow": "-2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff",
+        "key-shadow":
+          "inset -8px 0 8px rgba(0,0,0,0.15), inset 0 -8px 8px rgba(0,0,0,0.25), 10px 20px 25px rgba(0,0,0,0.4), 0 0 0 2px rgba(0,0,0,0.75)",
+        "key-before":
+          "-5px -5px 5px rgba(255,255,255,0.25), 10px 5px 10px rgba(0,0,0,0.15)",
       },
     },
   },
