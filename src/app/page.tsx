@@ -36,6 +36,9 @@ export default function Home() {
       <li>
         <Link href="/card">Card</Link>
       </li>
+      <li>
+        <Link href="/keyboard">Keyboard</Link>
+      </li>
     </div>
   );
 }
